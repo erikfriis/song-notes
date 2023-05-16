@@ -1,0 +1,58 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+h1 {
+	margin-top: 5rem;
+	color: rgb(255, 170, 0);
+}
+
+.container form input {
+	width: 40rem;
+	height: 3rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	border-radius: 5px;
+	border: none;
+	font-size: 1.5rem;
+	padding: 0 1rem;
+	max-width: 80vw;
+}
+
+.container form input:focus {
+	outline: none;
+}
+
+.todosContainer {
+	background-color: #ffffff;
+	border-radius: 5px;
+	width: 40rem;
+	overflow: scroll;
+	padding: 0 1rem;
+	max-height: 20rem;
+	max-width: 80vw;
+}
+
+.loader {
+	width: 2rem;
+	aspect-ratio: 1/1;
+	background-color: rgb(255, 170, 0);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+		rotate: 0deg;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}
